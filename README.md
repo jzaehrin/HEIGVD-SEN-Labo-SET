@@ -166,6 +166,8 @@ Next line of the body: Tartempion
 Next line of the body: END
 ```
 
+![fake mail](./fake_mail.png)
+
 # Exercice 3 - Explorer les liens "Phishy" et le courrier électronique "Phishy"
 
 Pour cette dernière partie de notre exploration du phishing, nous allons utiliser un contenu réalisé par les  Dr. Matthew L. Hale, le Dr. Robin Gandhi et la Dr. Briana B. Morrison de [Nebraska GenCyber](
