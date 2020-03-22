@@ -53,7 +53,7 @@ Vous découvrirez l'un des outils les plus couramment utilisés par les ingénie
 ### Soumettre des captures d'écran
 
 twitter.com
-----
+```
 set:webattack> Enter the url to clone:twitter.com
 
 [*] Cloning the website: http://twitter.com
@@ -77,10 +77,12 @@ POSSIBLE PASSWORD FIELD FOUND: session[password]=root
 
 
 127.0.0.1 - - [12/Mar/2020 17:11:58] "GET /favicon.ico HTTP/1.1" 404 -
-----
+```
+![twitter](./twitter.png)
+
 
 facebook.com
-----
+```
 [*] WE GOT A HIT! Printing the output:
 PARAM: jazoest=2784
 PARAM: lsd=AVrYgzsZ
@@ -98,7 +100,7 @@ PARAM: lgndim=eyJ3IjoxNDQwLCJoIjo5MDAsImF3IjoxNDQwLCJhaCI6ODc3LCJjIjoyNH0=
 PARAM: lgnrnd=091614_0k8V
 PARAM: lgnjs=1584029777
 POSSIBLE USERNAME FIELD FOUND: email=root
-POSSIBLE PASSWORD FIELD FOUND: pass=rootfaceook
+POSSIBLE PASSWORD FIELD FOUND: pass=rootfacebook
 PARAM: prefill_contact_point=root
 PARAM: prefill_source=browser_onload
 POSSIBLE PASSWORD FIELD FOUND: prefill_type=password
@@ -108,13 +110,15 @@ PARAM: had_cp_prefilled=true
 POSSIBLE PASSWORD FIELD FOUND: had_password_prefilled=true
 PARAM: ab_test_data=AAAAAA/AfAffAfAAAAAAAAAAAAAAAAAAAAAAAAAAf/fAffAAAADAAA
 [*] WHEN YOU'RE FINISHED, HIT CONTROL-C TO GENERATE A REPORT.
-----
+```
+
+![facebook](./facebook.png)
 
 example.org
-----
-set:webattack> Enter the url to clone:easygateway.co
+```
+set:webattack> Enter the url to clone:example.org
 
-[*] Cloning the website: http://easygateway.co
+[*] Cloning the website: http://example.org
 [*] This could take a little bit...
 
 The best way to use this attack is if username and password form fields are available. Regardless, this captures all POSTs on a website.
@@ -127,7 +131,7 @@ POSSIBLE USERNAME FIELD FOUND: login_username=root
 POSSIBLE USERNAME FIELD FOUND: login_password=root
 POSSIBLE PASSWORD FIELD FOUND: login_password=root
 [*] WHEN YOU'RE FINISHED, HIT CONTROL-C TO GENERATE A REPORT.
-----
+```
 
 Pour le collecteur d'identifiants, montrez que vous avez cloné un site en indiquant son adresse web et l'interface d'utilisateur. Saisissez les informations d'identification sur votre clone local, puis cliquez le bouton de connexion. Essayez plusieurs sites comme facebook.com, twitter.com, et d'autres qui puissent vous intéresser. Faites des captures d'écran des mots de passe collectés dans vos tests avec SET.
 
@@ -135,7 +139,7 @@ Pour le collecteur d'identifiants, montrez que vous avez cloné un site en indiq
 
 Essayez la fonction d'attaque par phishing. C'est très facile à faire. Vous pouvez vous référer à ce lien pour plus d'informations http://www.computerweekly.com/tutorial/Social-Engineer-Toolkit-SET-tutorial-for-penetration-testers
 
-----
+```
 set:phishing> Send email to:jonathan.zaehringer@heig-vd.ch
 
   1. Use a gmail Account for your email attack.
@@ -160,7 +164,7 @@ Next line of the body: Test SEToolkit
 Next line of the body:
 Next line of the body: Tartempion
 Next line of the body: END
-----
+```
 
 # Exercice 3 - Explorer les liens "Phishy" et le courrier électronique "Phishy"
 
@@ -176,6 +180,43 @@ En général, c'est un bon exemple de matériel de formation et d'éducation qui
 
 Vous avez la liberté de reproduire et d'utiliser le matériel grace à sa licence.
 
+Voici le faux mail que j'ai forgé en me ciblant
+```
+Received: from EIMAIL01.einet.ad.eivd.ch (10.192.41.71) by
+ EIMAIL02.einet.ad.eivd.ch (10.192.41.72) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.1913.5
+ via Mailbox Transport; Thu, 12 Mar 2020 17:33:32 +0100
+Received: from EIMAIL01.einet.ad.eivd.ch (10.192.41.71) by
+ EIMAIL01.einet.ad.eivd.ch (10.192.41.71) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id
+ 15.1.1913.5; Thu, 12 Mar 2020 17:33:32 +0100
+Received: from mbp-de-jonathan.einet.ad.eivd.ch (10.192.204.11) by
+ EIMAIL01.einet.ad.eivd.ch (10.192.41.71) with Microsoft SMTP Server
+ (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256) id 15.1.1913.5
+ via Frontend Transport; Thu, 12 Mar 2020 17:33:32 +0100
+Content-Type: multipart/mixed;
+	boundary="===============7939464480944501919=="
+MIME-Version: 1.0
+From: =?utf-8?b?VGFydGVtcGlvbg==?= <jonathan.zaehringer@heig-vd.ch>
+To: <jonathan.zaehringer@heig-vd.ch>
+X-Priority: 1 (Highest)
+X-MSMail-Priority: High
+Subject: =?utf-8?b?VXJnZW50ICE=?=
+Message-ID: <f7c8281f-b196-4585-935f-b28f62dfbaec@EIMAIL01.einet.ad.eivd.ch>
+Return-Path: jonathan.zaehringer@heig-vd.ch
+Date: Thu, 12 Mar 2020 17:33:32 +0100
+X-MS-Exchange-Organization-Network-Message-Id: b1041e25-1b35-4a7e-4832-08d7c6a31aa0
+X-MS-Exchange-Organization-AVStamp-Enterprise: 1.0
+X-MS-Exchange-Organization-AuthSource: EIMAIL01.einet.ad.eivd.ch
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.1814238
+X-MS-Exchange-Processed-By-BccFoldering: 15.01.1913.007
+```
+Nous pouvons voir déjà que mon émail a été ajouté au `FROM`.
+Ensuite le permier serveur a défini la récéption du mail par `mbp-de-jonathan.einet.ad.eivd.ch` qui est l'identité de mon mac dans le réseau de l'école et receptionner par `EIMAIL01.einet.ad.eivd.ch`.
+On peut voir aussi qu'en moins d'une seconde le mail a été délivré au dernier serveur.
+
+Le mail étant envoyé qu'en interne, le service de google ne permet pas de l'analysé.
 
 ### Soumettre des captures d'écran
 
